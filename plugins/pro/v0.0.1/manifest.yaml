@@ -1,0 +1,27 @@
+name: cli-ext
+version: "v0.0.1"
+shortDescription: "CLI plugin for Hasura Pro"
+homepage: https://docs.pro.hasura.io/cli
+hidden: true
+platforms:
+  - uri: "/https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases/v0.0.1/hasura-pro_linux_amd64.tar.gz"
+    sha256: "fc4db6ba06196e690225a4f542853b1c95e77fa598e5eb9166caded4aa4acf96"
+    bin: hasura-pro
+    files:
+      - from: ./hasura-pro
+        to: hasura-pro
+    selector: linux-amd64
+  - uri: "/https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases/v0.0.1/hasura-pro_darwin_amd64.tar.gz"
+    sha256: "04ac435085fc4039b1cbe78e22c8fb300430095cad4bcff122a50b8952be49eb"
+    bin: hasura-pro
+    files:
+      - from: ./hasura-pro
+        to: hasura-pro
+    selector: darwin-amd64
+  - uri: "/https://storage.googleapis.com/hasura-pro-cdn/hasura-pro-cli-releases/v0.0.1/hasura-pro_windows_amd64.zip"
+    sha256: "84cdbbcce7d68fd26f4157d87780d2663aec3ca67f9fa5170a59fbaad00fba0e"
+    bin: hasura-pro
+    files:
+      - from: ./hasura-pro
+        to: hasura-pro
+    selector: windows-amd64
